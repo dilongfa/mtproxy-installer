@@ -231,9 +231,7 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 
 ## Giải pháp Thay thế
 
-Nếu script không hoạt động trên hệ thống của bạn:
-
-### 1. Docker Version (Khuyến nghị)
+Nếu script không hoạt động trên hệ thống của bạn, hãy dùng thử phiên bản Docker
 
 ```bash
 # Cài đặt Docker
@@ -248,17 +246,6 @@ docker run -d \
   -p 8888:8888 \
   telegrammessenger/proxy:latest
 ```
-
-### 2. Alternative Script
-
-```bash
-# Sử dụng script khác đã được test
-bash <(curl -s https://raw.githubusercontent.com/HirbodBehnam/MTProtoProxyInstaller/master/MTProtoProxyInstall.sh)
-```
-
-### 3. Manual Installation
-
-Tham khảo hướng dẫn chi tiết tại repository community hoặc documentation chính thức.
 
 ## Bảo mật và Tối ưu
 
