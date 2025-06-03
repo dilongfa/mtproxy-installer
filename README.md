@@ -79,6 +79,7 @@ sudo whoami
 ```
 
 ### Bước 2: Download và Chạy Script
+
 Cách 1:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/dilongfa/mtproxy-installer/refs/heads/main/mtproxy_install.sh)
@@ -86,16 +87,8 @@ bash <(curl -s https://raw.githubusercontent.com/dilongfa/mtproxy-installer/refs
 
 Cách 2:
 ```bash
-# Tải script (thay YOUR_SCRIPT_URL bằng URL thực tế)
-wget -O install_mtproxy.sh https://raw.githubusercontent.com/dilongfa/mtproxy-installer/refs/heads/main/mtproxy_install.sh
-
-# Hoặc tạo file và copy nội dung script vào
-nano install_mtproxy.sh
-
-# Cấp quyền thực thi
+wget https://raw.githubusercontent.com/dilongfa/mtproxy-installer/refs/heads/main/mtproxy_install.sh
 chmod +x install_mtproxy.sh
-
-# Chạy script
 ./install_mtproxy.sh
 ```
 
